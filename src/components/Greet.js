@@ -1,8 +1,15 @@
 import React from 'react';
 
-export function Greet() {
+export function Greet(props) {
+
+    console.log(props);
     return ( 
-        <h2>Helle great world</h2>
+        <div>
+            <h2>First: {props.name}</h2>
+            <h2>Surname {props.surname}</h2>
+            <h2>Gender: {props.gender}</h2>
+            <hr/>
+        </div>
      );
 } 
 

@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 
 class Welcome extends Component {
     state = {  } 
     render() { 
-        return (
-            <h3>Welcome Mr Emmanuel</h3>
+        return(
+            <h3>
+              {this.props.children }{this.props.name}
+            </h3>
         );
     }
 }
