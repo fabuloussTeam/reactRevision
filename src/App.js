@@ -1,15 +1,19 @@
 import './App.css';
 import "./components/Greet";
 import { Greet, Greeting } from './components/Greet';
+import Message from './components/Message';
 import Welcome from './components/Welcome';
 
 function App() {
+
+    
   return (
     <div className="App">
-       <Greet name='Eric' surname='Theodol' gender='male'/> 
+       <Message></Message>
+
+      { /* <Greet name='Eric' surname='Theodol' gender='male'/> 
        <Greet name='Louise' surname='Dupain' gender='female'/> 
        <Greet name='Enrique' surname='Inglesia' gender='male'/> 
-
        <Welcome name='Enrique' surname='Inglesia' gender='male'>
          <p>You are Welcome here</p>
          </Welcome>
@@ -18,7 +22,7 @@ function App() {
          </Welcome>
          <Welcome name='Enrique' surname='Inglesia' gender='male'>
          <p>You are Welcome here</p>
-         </Welcome>
+         </Welcome> */}
     </div>
   );
 }
