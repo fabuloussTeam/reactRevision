@@ -3,18 +3,16 @@ import React, { Component } from 'react';
 class Message extends Component {
     constructor() {
         super();
-
         this.state = {
-            message: "Welcome visitor"
+            message: "Welcome visitor",
         }
+        this.subscribeItem = this.subscribeItem.bind(this);
     }
 
     subscribeItem(){
-      /*  this.setState({
+        this.setState({
             message: "Thank you for subcribe",
-        });*/
-        console.log('debug log here+++');
-
+        }); 
     }
 
     debugLog(){
@@ -25,7 +23,9 @@ class Message extends Component {
         return ( 
             <div>
                 <h2>{this.state.message}</h2>
-                <button onClick={this.subscribeItem}>SUBSCRIBE</button>
+               {/* <button onClick={this.subscribeItem.bind(this)}>SUBSCRIBE</button>*/}
+               {/* <button onClick={() => this.subscribeItem()}>SUBSCRIBE2</button>*/}
+                <button onClick={this.subscribeItem}>SUBSCRIBE3</button>
             </div>
          );
     }
