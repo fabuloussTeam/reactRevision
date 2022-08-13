@@ -18,7 +18,7 @@ class Message extends Component {
     debugLog(){
         console.log('debug log here');
     }
-      
+
     render() { 
         return ( 
             <div>

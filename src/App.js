@@ -5,6 +5,7 @@ import Message from './components/Message';
 import Welcome from './components/Welcome';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
   return (
     <div className="App">
 
+     <ParentComponent />
      {/* <FunctionClick/>*/}
       {/* <Counter></Counter>*/}
-       <Message></Message>
+      {/* <Message></Message>*/}
        {/*<Greet name='Eric' surname='Theodol' gender='male'/> 
        <Greet name='Louise' surname='Dupain' gender='female'/> 
   <Greet name='Enrique' surname='Inglesia' gender='male'/> */}
