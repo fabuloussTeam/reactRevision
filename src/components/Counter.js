@@ -33,7 +33,7 @@ class Counter extends Component {
         this.incrementNumber();
         this.incrementNumber();
         this.incrementNumber();
-
+console.log('increment ++++ ');
     }
 
    

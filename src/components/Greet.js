@@ -2,12 +2,13 @@ import React from 'react';
 
 export function Greet(props) {
 
-    console.log(props);
+   const  {name, surname, gender} = props;
+   // console.log(props);
     return ( 
         <div>
-            <h2>First: {props.name}</h2>
-            <h2>Surname {props.surname}</h2>
-            <h2>Gender: {props.gender}</h2>
+            <h2>First: {name}</h2>
+            <h2>Surname {surname}</h2>
+            <h2>Gender: {gender}</h2>
             <hr/>
         </div>
      );

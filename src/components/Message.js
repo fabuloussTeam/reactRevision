@@ -10,16 +10,22 @@ class Message extends Component {
     }
 
     subscribeItem(){
-        this.setState({
+      /*  this.setState({
             message: "Thank you for subcribe",
-        });
+        });*/
+        console.log('debug log here+++');
+
     }
 
+    debugLog(){
+        console.log('debug log here');
+    }
+      
     render() { 
         return ( 
             <div>
                 <h2>{this.state.message}</h2>
-                <button onClick={() => this.subscribeItem()}>SUBSCRIBE</button>
+                <button onClick={this.subscribeItem}>SUBSCRIBE</button>
             </div>
          );
     }
