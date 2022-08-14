@@ -11,8 +11,8 @@ class ParentComponent extends Component {
         this.messageParentDisplay = this.messageParentDisplay.bind(this)
     }
 
-      messageParentDisplay(){
-         alert(`EMMANUEL ${this.state.messageAlert}`);
+      messageParentDisplay(childParent){
+         alert(`EMMANUEL ${this.state.messageAlert} to our ${childParent}`);
       }
 
     render() { 
