@@ -28,8 +28,13 @@ const NameList = () => {
     ];
 
  
-    const OnePerson = usersEmployees.map(person => <Person key={person.id} person={person}/>)
+    // const OnePerson = usersEmployees.map(person => <Person key={person.id} person={person}/>)
   //On ne map pas le tableau dans le render
+
+    const OnePerson = usersEmployees.map((person, index) => <Person key={index} nid={index} person={person}/>)
+     // Lorsque il ya pas de cle unique a choisir, on ajoute un deuxieme 
+     //paramettre a map:index que on utilise comme cle. Il n'est pas conseiller de l'utiliser 
+     // a cause de trois pb: filtrage, clee unique dans le tableau en questtion
 
     return ( 
            <div>
