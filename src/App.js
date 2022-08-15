@@ -6,6 +6,8 @@ import Welcome from './components/Welcome';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
   return (
     <div className="App">
 
-     <ParentComponent />
+     <NameList />
+     {/*<UserGreeting/>*/}
+     {/*<ParentComponent />*/}
      {/* <FunctionClick/>*/}
       {/* <Counter></Counter>*/}
       {/* <Message></Message>*/}

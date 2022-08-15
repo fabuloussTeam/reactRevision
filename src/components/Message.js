@@ -6,6 +6,7 @@ class Message extends Component {
         this.state = {
             message: "Welcome visitor",
         }
+        
         this.subscribeItem = this.subscribeItem.bind(this);
     }
 
