@@ -17,17 +17,36 @@ class LifecycleB extends Component {
         return null;
     }
 
-    // Quatrieme fonction a etre executer: Charger les requettes HTTP asynchrone
+    // bointy Quatrieme fonction a etre executer: Charger les requettes HTTP asynchrone
     componentDidMount(){
         console.log('LifecycleB ComponentDidMount');
     }
 
-    // Troisieme a etre executer: charger les elements du DOM
+
+    shouldComponentUpdate(){
+        console.log('LifecycleB shouldComponenetUpdate');
+        return true;
+    }
+    // Updating: troisieme fonctios
+    getSnaphotBeforeUpdate(prevProps, prevState){
+        console.log('LifecycleB  getSnapshotBeforeupdate');
+
+        return null;
+    }
+
+    componentDidUpdate(){
+        console.log('LifecycleB componentDidupdate ');
+    }
+
+       // Troisieme a etre executer: charger les elements du DOM
     render() { 
         console.log('LifecycleB render');
         return ( 
+            <div>
+                <div> LifeCycle B</div>
+                </div>
+    
 
-            <div> LifeCycle B</div>
          );
     }
 }
