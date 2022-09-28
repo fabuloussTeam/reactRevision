@@ -7,15 +7,15 @@ const items = [];
         <>
           {
             items.map( item => ( 
-                <React.Fragment>
+                <React.Fragment key={item.id}>
                     <h1>Title</h1>
                     <p>{item.title}</p>
                 </React.Fragment>
             ))
           }      
-          <td>Emmanuel</td>
+          <td>Emma</td>
           <td>Tjom</td>
-        </>
+          </>
      );
 }
 

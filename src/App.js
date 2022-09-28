@@ -12,13 +12,17 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PrComponent from './components/PrComponent';
 
 function App() {
 
     
   return (
     <div className="App">
-   <Table />
+      
+  <PrComponent />
+
+  { /*<Table />*/}
    {/* <FragmentDemo />*/}
     {/*<LifecycleA />*/}
    {/* <Form />*/}
