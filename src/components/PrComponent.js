@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MemoComp from './MemoComp';
 import Purecomponent from './Purecomponent';
 import Regularcomponent from './Regularcomponent';
 
@@ -17,20 +18,22 @@ class PrComponent extends Component {
     componentDidMount(){
         setInterval( () => {
             this.setState(
-                {name: 'hummauel'}
+                {name: 'Emmanuel'}
             )
         }, 2000 )
     }
 
     render() { 
 
-        console.log('**************************parent compoent render*****************************');
+        //console.log('**************************parent compoent render*****************************');
 
         return ( 
             <div>
                 Parent Component 
-                <Regularcomponent name={this.state.name} />
-                <Purecomponent name={this.state.name}  />
+              { /* <Regularcomponent name={this.state.name} />*/}
+              { /* <Purecomponent name={this.state.name}  /> */}
+
+              <MemoComp name={this.state.name} />
             </div>
          );
     }
