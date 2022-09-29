@@ -14,13 +14,15 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PrComponent from './components/PrComponent';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 
 function App() {
 
     
   return (
     <div className="App">
-     <RefsDemo /> 
+      <FocusInput />
+    {/* <RefsDemo /> */}
  {/* <PrComponent />*/}
   { /*<Table />*/}
    {/* <FragmentDemo />*/}
