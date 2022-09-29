@@ -13,15 +13,15 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PrComponent from './components/PrComponent';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
 
     
   return (
     <div className="App">
-      
-  <PrComponent />
-
+     <RefsDemo /> 
+ {/* <PrComponent />*/}
   { /*<Table />*/}
    {/* <FragmentDemo />*/}
     {/*<LifecycleA />*/}
