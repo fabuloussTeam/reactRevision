@@ -21,17 +21,43 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import Users from './components/Users';
+import CounterTwo from './components/CounterTwo';
 
 function App() {
 
     
   return (
     <div className="App">
+   {/*Render props part 01*
+   <ClickCounterTwo />
+   <HoverCounterTwo />
+  <Users render={(isLoggedIn)=> isLoggedIn ? "Emmanuel4" : "Guest"}/> */}
 
- <ClickCounter name='Emmanuel' />
- <HoverCounter />
 
-      {/* <ErrorBoundary>
+  {/* Render props part 02: Passer une fontionalite a traver les props  */}
+   <CounterTwo
+      render={(count, inscrementCount) => <ClickCounterTwo 
+        count={count} 
+        clickCounterTwo={inscrementCount}
+      />}
+    />
+
+<CounterTwo
+      render={(count, inscrementCount) => <HoverCounterTwo 
+        count={count} 
+        hoverCounterTwo={inscrementCount}
+      />}
+    />
+
+  {// Hight order component: pass component as fonctionality 
+  /*<ClickCounter name='Emmanuel' />
+  <HoverCounter /> */}
+      
+      { //Afficher les message error on component
+      /* <ErrorBoundary>
        <Hero heroname='batman boy' />
        </ErrorBoundary>
 
