@@ -25,20 +25,33 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import Users from './components/Users';
 import CounterTwo from './components/CounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 function App() {
 
     
   return (
     <div className="App">
+
+    {/**
+     * Context part01 & part02
+     */}
+     <UserProvider value="Emmanuel">
+           <ComponentC />
+     </UserProvider>
+
+
+      
+
+
    {/*Render props part 01*
    <ClickCounterTwo />
    <HoverCounterTwo />
   <Users render={(isLoggedIn)=> isLoggedIn ? "Emmanuel4" : "Guest"}/> */}
 
-
   {/* Render props part 02: Passer une fontionalite a traver les props  */}
-   <CounterTwo
+ {/*  <CounterTwo
       render={(count, inscrementCount) => <ClickCounterTwo 
         count={count} 
         clickCounterTwo={inscrementCount}
@@ -51,7 +64,7 @@ function App() {
         hoverCounterTwo={inscrementCount}
       />}
     />
-
+      */}
   {// Hight order component: pass component as fonctionality 
   /*<ClickCounter name='Emmanuel' />
   <HoverCounter /> */}
