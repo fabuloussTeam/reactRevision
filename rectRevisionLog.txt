@@ -1,0 +1,155 @@
+commit a0b78c5ae7eae9d547e10e71590f0808822e1129
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Nov 5 12:36:18 2022 +0100
+
+    Context part1 & part2
+
+commit 79d4d62357962379a4b6263f8ac0ba6dbd3280cd
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Nov 4 18:22:57 2022 +0100
+
+    Render Props part1 & part2
+
+commit b0891e56b463db33706d19d48ed2766fa43e8596
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Tue Nov 1 16:14:37 2022 +0100
+
+    High Order component part3: incrementNumber parameter ajouter
+
+commit 6fbc61332af240305b5b815dd8fcfe5e46702e11
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Tue Nov 1 16:00:35 2022 +0100
+
+    High Order component part1 & part2: past fonctionality by parameter
+
+commit 0687d014fc0564e808d91d6bf3d00bae14978194
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Tue Oct 11 22:15:23 2022 +0100
+
+    Error boundary
+
+commit 7cc94d32b4fcba4959823e1ed3ae5d78aef6d512
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Sep 30 10:35:41 2022 +0100
+
+    Portal root
+
+commit cfdb9b679ca5e484c2b29faaffb0c93854a2c26d
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Sep 30 09:25:39 2022 +0100
+
+    Forwarding Refs
+
+commit a3f4e9c857afe094f338ffec93f5cdbbfce6314b
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Thu Sep 29 09:29:47 2022 +0100
+
+    Refs qves les classe component
+
+commit 2c66b2ca68ae37ee2d540df8ed491e161e79d8fa
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Thu Sep 29 06:36:13 2022 +0100
+
+    Refs
+
+commit f98e8325aa3fbb8009fb1afbd41ac3d450b575cb
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Wed Sep 28 16:53:36 2022 +0100
+
+    Utilisation des Memos
+
+commit 86a26605111b5cb47271842575cc449bd5690099
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Wed Sep 28 06:59:43 2022 +0100
+
+    Pure component VS Regular component
+
+commit 7e9c1b821d638ad156afe42f613c6d920c462c8a
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Wed Sep 28 05:49:21 2022 +0100
+
+    React Fragment
+
+commit bbf5a3d0c2584d752653e9b4789d3d18bcde0e6b
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Tue Sep 27 06:24:31 2022 +0100
+
+    Lifecycle methode Updating
+
+commit 216a0b51cfe761d447982c5ec052dd06831cccf4
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Mon Sep 26 07:03:56 2022 +0100
+
+    Lifecycle methode Mounting
+
+commit ea68316b261591e2deedf6465c82145976c99bf7
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Sep 23 18:22:49 2022 +0100
+
+    Mise en place d'un Formulaire
+
+commit 7c057cada5fdabbaabdc84580ec7f3142b5a0ad3
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Mon Aug 15 19:13:15 2022 +0100
+
+    Mapping array + insertion d'une key unique
+
+commit 9b90a558f63264209f024a0422fc5c11f7b7f06d
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Mon Aug 15 18:43:39 2022 +0100
+
+    Mapping array
+
+commit 595c663349a1740352183276a15fdc0d60960367
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sun Aug 14 18:54:15 2022 +0100
+
+    envoi des donnees du composant enfant au parent
+
+commit 3c5e0e1294b901d7fd5248a43d00d2a6a37137e5
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Aug 13 18:43:26 2022 +0100
+
+    envoi une action du parent a l'enfant
+
+commit d07165d0556ba35391efe786fdc0ec1a189d555d
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Aug 13 18:00:53 2022 +0100
+
+    3 methodes pour lier un button a une fonction action
+
+commit d4cd7a5d3390b6ee71acbe8e3b87bf109fd27e48
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Aug 13 17:03:05 2022 +0100
+
+    event handler
+
+commit f279fe71b6a16ed69078c7b5d0f5d7fbadf3fbb7
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Aug 13 08:29:09 2022 +0100
+
+    Utilisation de setState + prevState pour la mise a jour du preview state
+
+commit a9f6348737cb710fbe36a9fd9c2612609bdc8038
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Sat Aug 13 07:50:44 2022 +0100
+
+    Utilisation de setState
+
+commit bb6bf55e5970b8889b559086805340b7c418dbcd
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Aug 12 22:38:26 2022 +0100
+
+    Utilisation des props sur des composant stateless et statefull
+
+commit a7585a851b6e2847324f388b4b5d971531d0f027
+Author: tjom Emmanuel <tjomemmanuel@gmail.com>
+Date:   Fri Aug 12 00:20:11 2022 +0100
+
+    Composant Stateless et Statefull
+
+commit 035c12f60fb574036ab7463ee3974e114e9559fc
+Author: tjom Emmanuel <matigipudens100@gmail.com>
+Date:   Wed Aug 10 23:58:36 2022 +0100
+
+    initialisation of project 1
