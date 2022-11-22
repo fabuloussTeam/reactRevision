@@ -28,13 +28,18 @@ import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
 
     
   return (
     <div className="App">
-      <PostList />
+
+
+     <PostForm />
+
+      { /* Requete HTTP GET <PostList />*/ }
 
     {/**
      * Context part01 & part02
