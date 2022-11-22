@@ -27,24 +27,22 @@ import Users from './components/Users';
 import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
 
 function App() {
 
     
   return (
     <div className="App">
+      <PostList />
 
     {/**
      * Context part01 & part02
-     */}
+    
      <UserProvider value="Emmanuel">
            <ComponentC />
      </UserProvider>
-
-
-      
-
-
+    */}
    {/*Render props part 01*
    <ClickCounterTwo />
    <HoverCounterTwo />
