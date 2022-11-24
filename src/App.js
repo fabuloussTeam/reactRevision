@@ -33,14 +33,21 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterTree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
+import HookCounterOne from './components/HookCounterOne';
 
 function App() {
 
     
   return (
     <div className="App">
+    
+  {/* useEffect Hook : It replace componentDidMount and componentDidUpdate. It run each time after render */}
+    <ClassCounterOne /> 
+    <HookCounterOne /> 
 
-    <HookCounterFour />
+
+    {/* useState avec un tableau <HookCounterFour />*/} 
      {/* useState avec un objet <HookCounterTree /> */ }
      {/* useState avec utilisation du PrevState <HookCounterTwo /> */ }
    { /* <HookCounter /> */}
