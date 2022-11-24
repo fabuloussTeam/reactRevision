@@ -42,12 +42,14 @@ function App() {
   return (
     <div className="App">
     
-  {/* useEffect Hook : It replace componentDidMount and componentDidUpdate. It run each time after render */}
+  {/* useEffect Hook : It replace componentDidMount and componentDidUpdate. It run each time after render 
+   conditionement du rechargement du Hook useEffect
+  */}
     <ClassCounterOne /> 
-    <HookCounterOne /> 
-
-
-    {/* useState avec un tableau <HookCounterFour />*/} 
+     <HookCounterOne /> 
+     
+     
+         {/* useState avec un tableau <HookCounterFour />*/} 
      {/* useState avec un objet <HookCounterTree /> */ }
      {/* useState avec utilisation du PrevState <HookCounterTwo /> */ }
    { /* <HookCounter /> */}
