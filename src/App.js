@@ -29,6 +29,7 @@ import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import HookCounter from './components/HookCounter';
 
 function App() {
 
@@ -36,11 +37,11 @@ function App() {
   return (
     <div className="App">
 
+     <HookCounter />
 
-     <PostForm />
 
-      { /* Requete HTTP GET <PostList />*/ }
-
+     {/* Requete HTTP POST  <PostForm /> */}
+     { /* Requete HTTP GET <PostList />*/ }
     {/**
      * Context part01 & part02
     
