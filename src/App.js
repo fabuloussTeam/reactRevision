@@ -30,6 +30,7 @@ import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
 import HookCounter from './components/HookCounter';
+import HookCounterTwo from './components/HookCounterTwo';
 
 function App() {
 
@@ -37,7 +38,9 @@ function App() {
   return (
     <div className="App">
 
-     <HookCounter />
+
+     <HookCounterTwo />
+   { /* <HookCounter /> */}
 
 
      {/* Requete HTTP POST  <PostForm /> */}
