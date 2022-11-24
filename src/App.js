@@ -32,6 +32,7 @@ import PostForm from './components/PostForm';
 import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterTree from './components/HookCounterThree';
+import HookCounterFour from './components/HookCounterFour';
 
 function App() {
 
@@ -39,8 +40,8 @@ function App() {
   return (
     <div className="App">
 
-
-     <HookCounterTree />
+    <HookCounterFour />
+     {/* useState avec un objet <HookCounterTree /> */ }
      {/* useState avec utilisation du PrevState <HookCounterTwo /> */ }
    { /* <HookCounter /> */}
 
