@@ -37,15 +37,25 @@ import ClassCounterOne from './components/ClassCounterOne';
 import HookCounterOne from './components/HookCounterOne';
 import ClassMouse from './components/ClassMouse';
 import HookMouse from './components/HookMouse';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './components/IntervalHookCounter';
 
 function App() {
 
     
   return (
     <div className="App">
+   {/* Incorrect dependency avec useEffect: 
+   Ne pas associer le non rerendring([]) d'useEffect et demonter un composant
+    <IntervalClassCounter />
+      <IntervalHookCounter />
+   */}
+      
+
+
   {/* Empecher le rerendring de useEffect(componentDidUpdate).
-  <ClassMouse /> */}
-  <HookMouse/>
+  <ClassMouse /> 
+  <HookMouse/> */}
 
 
   {/* useEffect Hook : It replace componentDidMount and componentDidUpdate. It run each time after render 
