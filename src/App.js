@@ -35,31 +35,34 @@ import HookCounterTree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import ClassCounterOne from './components/ClassCounterOne';
 import HookCounterOne from './components/HookCounterOne';
+import ClassMouse from './components/ClassMouse';
+import HookMouse from './components/HookMouse';
 
 function App() {
 
     
   return (
     <div className="App">
-    
+  {/* Empecher le rerendring de useEffect(componentDidUpdate).
+  <ClassMouse /> */}
+  <HookMouse/>
+
+
   {/* useEffect Hook : It replace componentDidMount and componentDidUpdate. It run each time after render 
    conditionement du rechargement du Hook useEffect
-  */}
     <ClassCounterOne /> 
-     <HookCounterOne /> 
+    <HookCounterOne /> */}
      
      
-         {/* useState avec un tableau <HookCounterFour />*/} 
+     {/* useState avec un tableau <HookCounterFour />*/} 
      {/* useState avec un objet <HookCounterTree /> */ }
      {/* useState avec utilisation du PrevState <HookCounterTwo /> */ }
-   { /* <HookCounter /> */}
+     { /* <HookCounter /> */}
 
 
      {/* Requete HTTP POST  <PostForm /> */}
      { /* Requete HTTP GET <PostList />*/ }
-    {/**
-     * Context part01 & part02
-    
+     {/*** Context part01 & part02
      <UserProvider value="Emmanuel">
            <ComponentC />
      </UserProvider>
