@@ -40,6 +40,8 @@ import HookMouse from './components/HookMouse';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
+import ContextHookA from './components/ContextHookA';
+import { FullNameProvider, IdNumberProvider } from './components/UserContextHook';
 
 function App() {
 
@@ -47,11 +49,23 @@ function App() {
   return (
     <div className="App">
 
+      {/** useContext Hook: 1
+       * 1- On creer le context
+       * 2- On fourni les donnees au composant le plus haut avec provider
+       * 3- On recupere les donnees avec useContext() 
+       */}
+    <FullNameProvider value={"Tjom Emmanuel"}>
+        <IdNumberProvider value={"FGHTQQSFFFD"}>
+              <ContextHookA />
+        </IdNumberProvider>
+    </FullNameProvider>
+
+
   {/* Recuperer les donnees avec API avec useEffect et Axios, 
       a partir d'un button click
-  */}
+       <DataFetching />
+   */}
 
-  <DataFetching />
 
    {/* Incorrect dependency avec useEffect: 
    Ne pas associer le non rerendring([]) d'useEffect et demonter un composant
