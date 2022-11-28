@@ -17,7 +17,8 @@ function IntervalHookCounter() {
     }, [count] )
 
     const tick = () =>{
-        setCount(count + 1)
+       //option01: setCount(count + 1)
+        setCount(prevCount => prevCount + 1)
     }
 
 

@@ -39,20 +39,24 @@ import ClassMouse from './components/ClassMouse';
 import HookMouse from './components/HookMouse';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetching from './components/DataFetching';
 
 function App() {
 
     
   return (
     <div className="App">
+
+  {/* Recuperer les donnees avec API avec useEffect et Axios*/}
+
+  <DataFetching />
+
    {/* Incorrect dependency avec useEffect: 
    Ne pas associer le non rerendring([]) d'useEffect et demonter un composant
     <IntervalClassCounter />
       <IntervalHookCounter />
    */}
       
-
-
   {/* Empecher le rerendring de useEffect(componentDidUpdate).
   <ClassMouse /> 
   <HookMouse/> */}
