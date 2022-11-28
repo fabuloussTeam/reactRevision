@@ -47,7 +47,9 @@ function App() {
   return (
     <div className="App">
 
-  {/* Recuperer les donnees avec API avec useEffect et Axios*/}
+  {/* Recuperer les donnees avec API avec useEffect et Axios, 
+      a partir d'un button click
+  */}
 
   <DataFetching />
 

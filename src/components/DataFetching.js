@@ -5,23 +5,34 @@ function DataFetching() {
 
     const [post, setPost] = useState({})
     const [id, setId] = useState(1)
+    const [idFrombuttonclick, setIdfrombuttonclick] = useState(1)
+
+
+    const handlerClick = id =>{
+        setIdfrombuttonclick(id)
+        console.log(idFrombuttonclick);
+    }
+
+
     useEffect(() => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${idFrombuttonclick}`)
         .then(res => {
             console.log(res);
             setPost(res.data)
         }).catch(err => {
             console.log(err);
         })
-    }, [id] )
+    }, [idFrombuttonclick] )
+
 
     return ( 
         <div>
             {
-                <React.Fragment>
+<span>
                     <input type='text' value={id} onChange={(e) => setId(e.target.value)} />
+                    <button onClick={() => handlerClick(id)}>Fetch Posts</button>
                 <h2>{post.title}</h2>
-                </React.Fragment>
+                </span>
              /** posts.map(post => <ul titlekey={post.id}>
                  <li>{post.userId}</li> 
                  <li>{post.title}</li> 
