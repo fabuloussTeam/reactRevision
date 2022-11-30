@@ -42,6 +42,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import ContextHookA from './components/ContextHookA';
 import { FullNameProvider, IdNumberProvider } from './components/UserContextHook';
+import UseReducerHookOne from './components/UseReducerHookOne';
 
 function App() {
 
@@ -49,17 +50,21 @@ function App() {
   return (
     <div className="App">
 
+    {/** useReducer Hook: Part01 (simple state and action) */}
+      <UseReducerHookOne />
+
+
       {/** useContext Hook: 1
        * 1- On creer le context
        * 2- On fourni les donnees au composant le plus haut avec provider
        * 3- On recupere les donnees avec useContext() 
-       */}
+       
     <FullNameProvider value={"Tjom Emmanuel"}>
         <IdNumberProvider value={"FGHTQQSFFFD"}>
               <ContextHookA />
         </IdNumberProvider>
     </FullNameProvider>
-
+*/}
 
   {/* Recuperer les donnees avec API avec useEffect et Axios, 
       a partir d'un button click
