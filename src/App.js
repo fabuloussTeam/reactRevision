@@ -43,6 +43,7 @@ import DataFetching from './components/DataFetching';
 import ContextHookA from './components/ContextHookA';
 import { FullNameProvider, IdNumberProvider } from './components/UserContextHook';
 import UseReducerHookOne from './components/UseReducerHookOne';
+import UseReducerHookTwo from './components/UseReducerHookTwo';
 
 function App() {
 
@@ -50,8 +51,13 @@ function App() {
   return (
     <div className="App">
 
-    {/** useReducer Hook: Part01 (simple state and action) */}
-      <UseReducerHookOne />
+    {/** useReducer Hook: part2 */}
+    <UseReducerHookTwo />
+
+    {/** useReducer Hook: Part01 (simple state and action) 
+      <UseReducerHookOne /> */}
+
+
 
 
       {/** useContext Hook: 1
