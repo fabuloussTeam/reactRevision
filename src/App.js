@@ -44,6 +44,7 @@ import ContextHookA from './components/ContextHookA';
 import { FullNameProvider, IdNumberProvider } from './components/UserContextHook';
 import UseReducerHookOne from './components/UseReducerHookOne';
 import UseReducerHookTwo from './components/UseReducerHookTwo';
+import UseReducerHookThree from './components/UseReducerHookThree';
 
 function App() {
 
@@ -51,8 +52,11 @@ function App() {
   return (
     <div className="App">
 
-    {/** useReducer Hook: part2 */}
-    <UseReducerHookTwo />
+    {/** Multiple useReducers */}
+    <UseReducerHookThree />
+
+    {/** useReducer Hook: part2
+    <UseReducerHookTwo />  */}
 
     {/** useReducer Hook: Part01 (simple state and action) 
       <UseReducerHookOne /> */}
