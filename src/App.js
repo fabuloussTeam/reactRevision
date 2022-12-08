@@ -45,15 +45,61 @@ import { FullNameProvider, IdNumberProvider } from './components/UserContextHook
 import UseReducerHookOne from './components/UseReducerHookOne';
 import UseReducerHookTwo from './components/UseReducerHookTwo';
 import UseReducerHookThree from './components/UseReducerHookThree';
+import UseReducerWithContextA from './components/UseReducerWthContextA';
+import UseReducerWithContextC from './components/UseReducerWithContextC';
+import UseReducerWithContextB from './components/UseReducerWithContextB';
+import React, { useReducer } from 'react';
 
+
+
+// Valeur initial
+const initialState = 0;
+
+// Function reducer
+const reducerFunction = (state, action) => {
+  switch (action) {
+    case 'increment':
+        return state + 1;
+    case 'decrement':
+        return state - 1
+    case 'reset':
+        return initialState    
+    default:
+        return state
+  }
+}
+
+export const CounterContext = React.createContext()
+
+/**
+ *  1 - on definit useReducer() ensuite on cree le initialState et la function reducer
+ *  2 - on definit le createContext ensuite on fourni les donnee aux composant mere avec le CounterContext.Provider
+ *  3 - On vas dans les composants fourni puis on importe le context que l'on exploite dans 
+ * useContext() pour acceder la valeur du provider(CounterContext.Provider)
+ *  4 - Puis on l'utilise dans le render().
+ * 
+ */
 function App() {
 
-    
+  const  [count, dispatchWithouAction] = useReducer(reducerFunction, initialState)
+
   return (
     <div className="App">
 
-    {/** Multiple useReducers */}
-    <UseReducerHookThree />
+  {/** useReducer with useContext  */}
+    <div>count - {count}</div>
+
+  <CounterContext.Provider
+    value={{counterState:count, counterDispatch: dispatchWithouAction}}
+  >
+    <UseReducerWithContextA />
+    <UseReducerWithContextB />
+    <UseReducerWithContextC />
+  </CounterContext.Provider>
+  
+
+    {/** Multiple useReducers 
+    <UseReducerHookThree /> */}
 
     {/** useReducer Hook: part2
     <UseReducerHookTwo />  */}
