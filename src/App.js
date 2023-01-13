@@ -49,6 +49,7 @@ import UseReducerWithContextA from './components/UseReducerWthContextA';
 import UseReducerWithContextC from './components/UseReducerWithContextC';
 import UseReducerWithContextB from './components/UseReducerWithContextB';
 import React, { useReducer } from 'react';
+import DataFetchingOne from './components/DataFetchingOne';
 
 
 
@@ -81,12 +82,16 @@ export const CounterContext = React.createContext()
  */
 function App() {
 
-  const  [count, dispatchWithouAction] = useReducer(reducerFunction, initialState)
+ // const  [count, dispatchWithouAction] = useReducer(reducerFunction, initialState)
 
   return (
     <div className="App">
+  
+  {/** Fetching data with useReducer Part1 */}
+  <DataFetchingOne />
 
-  {/** useReducer with useContext  */}
+
+  {/** useReducer with useContext  
     <div>count - {count}</div>
 
   <CounterContext.Provider
@@ -96,7 +101,7 @@ function App() {
     <UseReducerWithContextB />
     <UseReducerWithContextC />
   </CounterContext.Provider>
-  
+  */}
 
     {/** Multiple useReducers 
     <UseReducerHookThree /> */}
